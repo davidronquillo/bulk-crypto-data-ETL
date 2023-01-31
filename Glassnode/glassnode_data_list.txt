@@ -1,0 +1,186 @@
+addresses T1
+active_count,sending_count,receiving_count,new_non_zero_count,count
+
+addresses T2
+non_zero_count,min_point_zero_1_count,min_point_1_count,min_1_count,min_10_count,min_100_count,min_1k_count,min_10k_count
+
+addresses T2 ETH
+min_32_count
+
+blockchain T1
+block_height,block_count,block_interval_mean,block_interval_median,block_size_sum,block_size_mean,utxo_created_count,utxo_spent_count,utxo_count,utxo_created_value_sum,utxo_created_value_mean,utxo_created_value_median,utxo_spent_value_sum,utxo_spent_value_mean,utxo_spent_value_median
+
+blockchain T2
+utxo_profit_relative,utxo_profit_count,utxo_loss_count
+
+eth2 T1
+staking_deposits_count,staking_volume_sum,staking_validators_count,staking_total_deposits_count,staking_total_volume_sum,staking_total_validators_count,staking_phase_0_goal_percent
+
+defi T2
+total_value_locked
+
+derivatives T2
+futures_funding_rate_perpetual,futures_funding_rate_perpetual_all,futures_open_interest_sum,futures_open_interest_perpetual_sum,futures_open_interest_sum_all,futures_open_interest_perpetual_sum_all,futures_estimated_leverage_ratio,futures_volume_daily_sum,futures_volume_daily_perpetual_sum,futures_volume_daily_sum_all,futures_volume_daily_perpetual_sum_all,futures_liquidated_volume_long_sum,futures_liquidated_volume_long_mean,futures_liquidated_volume_short_sum,futures_liquidated_volume_short_mean,futures_liquidated_volume_long_relative,options_open_interest_sum,options_volume_daily_sum
+
+distribution T2 BTC
+balance_exchanges_relative,exchange_net_position_change,balance_exchanges_all,balance_exchanges
+
+distribution T2 ETH
+supply_contracts,balance_1pct_holders,gini,herfindahl
+
+fees T1 BTC
+volume_sum,volume_mean,volume_median
+
+fees T1 ETH
+gas_used_sum,gas_used_mean,gas_used_median,gas_price_mean,gas_price_median,gas_limit_tx_mean,gas_limit_tx_median
+
+fees T2
+fee_ratio_multiple
+
+indicators T1
+difficulty_ribbon,sopr,stock_to_flow_ratio
+
+indicators T2
+cdd,cdd_supply_adjusted,cdd_supply_adjusted_binary,reserve_risk,cvdd,cyd,cyd_supply_adjusted,cdd90_age_adjusted,balanced_price_usd,puell_multiple,average_dormancy,average_dormancy_supply_adjusted,dormancy_account_based,rhodl_ratio,liveliness,nvt,nvts,velocity,realized_profit,realized_loss,net_realized_profit_loss,realized_profit_loss_ratio,difficulty_ribbon_compression,hash_ribbon,sopr_adjusted,asol,msol,soab,sol_1h,sol_1h_24h,sol_1d_1w,sol_1w_1m,sol_1m_3m,sol_3m_6m,sol_6m_12m,sol_1y_2y,sol_2y_3y,sol_3y_5y,sol_5y_7y,sol_7y_10y,sol_more_10y,ssr,ssr_oscillator,stock_to_flow_deflection,net_unrealized_profit_loss,unrealized_profit,unrealized_loss
+
+institutions T1
+grayscale_holdings_sum,grayscale_flows_sum,grayscale_aum_sum,grayscale_premium_percent,grayscale_market_price_usd,purpose_etf_holdings_sum,purpose_etf_flows_sum,qbtc_holdings_sum,qbtc_flows_sum,qbtc_aum_sum,qbtc_premium_percent,qbtc_market_price_usd
+
+market T1
+marketcap_usd,price_usd_close,price_usd_ohlc,price_drawdown_relative
+
+market T2
+mvrv,mvrv_z_score,marketcap_realized_usd,deltacap_usd,price_realized_usd
+
+mining T1
+difficulty_latest,hash_rate_mean
+
+mining T2
+revenue_sum,revenue_from_fees,volume_mined_sum,thermocap,marketcap_thermocap_ratio
+
+protocols T1 ETH
+uniswap_transaction_count,uniswap_volume_sum,uniswap_liquidity_latest
+
+supply T1
+current,active_more_1y_percent
+
+supply T2
+current_adjusted,issued,inflation_rate,hodl_waves,rcap_hodl_waves,active_more_2y_percent,active_more_3y_percent,active_more_5y_percent,active_24h,active_1d_1w,active_1w_1m,active_1m_3m,active_3m_6m,active_6m_12m,active_1y_2y,active_2y_3y,active_3y_5y,active_5y_7y,active_7y_10y,active_more_10y,profit_relative,profit_sum,loss_sum
+
+transactions T1 BTC
+count,rate,size_sum,size_mean,transfers_volume_sum,transfers_volume_mean,transfers_volume_median
+
+transactions T1 ETH
+transfers_count,transfers_rate
+
+transactions T2 BTC
+transfers_volume_to_exchanges_sum,transfers_volume_from_exchanges_sum,transfers_volume_exchanges_net,transfers_to_exchanges_count,transfers_from_exchanges_count,transfers_volume_to_exchanges_mean,transfers_volume_from_exchanges_mean,transfers_volume_adjusted_sum,transfers_volume_adjusted_mean,transfers_volume_adjusted_median
+
+transactions T2 ETH
+contract_calls_external_count,contract_calls_internal_count
+
+-------------------------------------------------------------------------
+
+The Block List
+active_count,new_non_zero_count,profit_relative
+
+First List
+marketcap_usd,price_drawdown_relative,mvrv,mvrv_z_score,marketcap_realized_usd,cdd_supply_adjusted,reserve_risk,puell_multiple,average_dormancy_supply_adjusted,liveliness,nvt,nvts,velocity,realized_profit,realized_loss,net_realized_profit_loss,realized_profit_loss_ratio,difficulty_ribbon_compression,sopr_adjusted,asol,msol,ssr_oscillator,stock_to_flow_deflection,net_unrealized_profit_loss,unrealized_profit,unrealized_loss
+
+-------------------------------------------------------------------------
+
+All BTC T1
+active_count,sending_count,receiving_count,new_non_zero_count,count,block_height,block_count,block_interval_mean,block_interval_median,block_size_sum,block_size_mean,utxo_created_count,utxo_spent_count,utxo_count,utxo_created_value_sum,utxo_created_value_mean,utxo_created_value_median,utxo_spent_value_sum,utxo_spent_value_mean,utxo_spent_value_median,volume_sum,volume_mean,volume_median,difficulty_ribbon,sopr
+
+stock_to_flow_ratio,grayscale_holdings_sum,grayscale_flows_sum,grayscale_aum_sum,grayscale_premium_percent,grayscale_market_price_usd,purpose_etf_holdings_sum,purpose_etf_flows_sum,qbtc_holdings_sum,qbtc_flows_sum,qbtc_aum_sum,qbtc_premium_percent,qbtc_market_price_usd,marketcap_usd,price_drawdown_relative,difficulty_latest,hash_rate_mean,current,active_more_1y_percent,count,rate,size_sum,size_mean,transfers_volume_sum,transfers_volume_mean,transfers_volume_median
+
+All BTC T2
+non_zero_count,min_point_zero_1_count,min_point_1_count,min_1_count,min_10_count,min_100_count,min_1k_count,min_10k_count,utxo_profit_relative,utxo_profit_count,utxo_loss_count,futures_funding_rate_perpetual,futures_funding_rate_perpetual_all,futures_open_interest_sum,futures_open_interest_perpetual_sum,futures_open_interest_sum_all,futures_open_interest_perpetual_sum_all,futures_estimated_leverage_ratio,futures_volume_daily_sum,futures_volume_daily_perpetual_sum,futures_volume_daily_sum_all
+
+futures_volume_daily_perpetual_sum_all,futures_liquidated_volume_long_sum,futures_liquidated_volume_long_mean,futures_liquidated_volume_short_sum,futures_liquidated_volume_short_mean,futures_liquidated_volume_long_relative,options_open_interest_sum,options_volume_daily_sum,balance_exchanges_relative,exchange_net_position_change,balance_exchanges_all,balance_exchanges,fee_ratio_multiple,cdd,cdd_supply_adjusted,cdd_supply_adjusted_binary,reserve_risk,cvdd,cyd,cyd_supply_adjusted,cdd90_age_adjusted
+
+balanced_price_usd,puell_multiple,average_dormancy,average_dormancy_supply_adjusted,dormancy_account_based,rhodl_ratio,liveliness,nvt,nvts,velocity,realized_profit,realized_loss,net_realized_profit_loss,realized_profit_loss_ratio,difficulty_ribbon_compression,hash_ribbon,sopr_adjusted,asol,msol,soab,sol_1h,sol_1h_24h,sol_1d_1w,sol_1w_1m,sol_1m_3m,sol_3m_6m,sol_6m_12m,sol_1y_2y,sol_2y_3y,sol_3y_5y,sol_5y_7y,sol_7y_10y,sol_more_10y,ssr,ssr_oscillator,stock_to_flow_deflection,net_unrealized_profit_loss
+
+unrealized_profit,unrealized_loss,mvrv,mvrv_z_score,marketcap_realized_usd,deltacap_usd,price_realized_usd,revenue_sum,revenue_from_fees,volume_mined_sum,thermocap,marketcap_thermocap_ratio,current_adjusted,issued,inflation_rate,hodl_waves,rcap_hodl_waves,active_more_2y_percent,active_more_3y_percent,active_more_5y_percent,active_24h,active_1d_1w,active_1w_1m,active_1m_3m,active_3m_6m,active_6m_12m,active_1y_2y,active_2y_3y,active_3y_5y,active_5y_7y,active_7y_10y,active_more_10y,profit_relative
+
+profit_sum,loss_sum,transfers_volume_to_exchanges_sum,transfers_volume_from_exchanges_sum,transfers_volume_exchanges_net,transfers_to_exchanges_count,transfers_from_exchanges_count,transfers_volume_to_exchanges_mean,transfers_volume_from_exchanges_mean,transfers_volume_adjusted_sum,transfers_volume_adjusted_mean,transfers_volume_adjusted_median
+
+
+-------------------------------------------------------------------------
+
+All ETH
+active_count,sending_count,receiving_count,new_non_zero_count,count,block_height,block_count,block_interval_mean,block_interval_median,block_size_sum,block_size_mean,staking_deposits_count,staking_volume_sum,staking_validators_count,staking_total_deposits_count,staking_total_volume_sum,staking_total_validators_count,staking_phase_0_goal_percent,volume_sum,volume_mean,volume_median,gas_used_sum,gas_used_mean,gas_used_median,gas_price_mean,gas_price_median,gas_limit_tx_mean,gas_limit_tx_median
+
+sopr,grayscale_holdings_sum,grayscale_flows_sum,grayscale_aum_sum,grayscale_premium_percent,grayscale_market_price_usd,marketcap_usd,price_usd_close,price_usd_ohlc,price_drawdown_relative,difficulty_latest,hash_rate_mean,uniswap_transaction_count,uniswap_volume_sum,uniswap_liquidity_latest,current,count,rate,transfers_count,transfers_rate,transfers_volume_sum,transfers_volume_mean,transfers_volume_median,non_zero_count,min_point_zero_1_count,min_point_1_count,min_1_count,min_10_count,min_100_count,min_1k_count
+
+min_10k_count,min_32_count,futures_funding_rate_perpetual,futures_funding_rate_perpetual_all,futures_open_interest_sum,futures_open_interest_perpetual_sum,futures_open_interest_sum_all,futures_open_interest_perpetual_sum_all,futures_estimated_leverage_ratio,futures_volume_daily_sum,futures_volume_daily_perpetual_sum,futures_volume_daily_sum_all,futures_volume_daily_perpetual_sum_all,futures_liquidated_volume_long_sum,futures_liquidated_volume_long_mean,futures_liquidated_volume_short_sum,futures_liquidated_volume_short_mean
+
+futures_liquidated_volume_long_relative,options_open_interest_sum,options_volume_daily_sum,balance_exchanges_relative,exchange_net_position_change,balance_exchanges_all,balance_exchanges,supply_contracts,balance_1pct_holders,gini,herfindahl,fee_ratio_multiple,cdd,average_dormancy,liveliness,nvt,nvts,velocity,asol,msol,net_unrealized_profit_loss,unrealized_profit,unrealized_loss,mvrv,marketcap_realized_usd,price_realized_usd,revenue_sum,revenue_from_fees
+
+thermocap,marketcap_thermocap_ratio,issued,inflation_rate,hodl_waves,active_24h,active_1d_1w,active_1w_1m,active_1m_3m,active_3m_6m,active_6m_12m,active_1y_2y,active_2y_3y,active_3y_5y,active_5y_7y,active_7y_10y,active_more_10y,profit_relative,profit_sum,loss_sum,transfers_volume_to_exchanges_sum,transfers_volume_from_exchanges_sum,transfers_volume_exchanges_net,transfers_to_exchanges_count,transfers_from_exchanges_count,transfers_volume_to_exchanges_mean,transfers_volume_from_exchanges_mean,contract_calls_external_count,contract_calls_internal_count
+
+-------------------------------------------------------------------------
+
+All ERC-20
+active_count,sending_count,receiving_count,new_non_zero_count,count,marketcap_usd,price_usd_close,price_usd_ohlc,price_drawdown_relative,uniswap_transaction_count,uniswap_volume_sum,uniswap_liquidity_latest,current,transfers_count,transfers_rate,transfers_volume_sum,transfers_volume_mean,transfers_volume_median,non_zero_count,balance_exchanges_relative,exchange_net_position_change,balance_exchanges_all,balance_exchanges,supply_contracts,balance_1pct_holders,gini,herfindahl
+
+nvt,nvts,velocity,transfers_volume_to_exchanges_sum,transfers_volume_from_exchanges_sum,transfers_volume_exchanges_net,transfers_to_exchanges_count,transfers_from_exchanges_count,transfers_volume_to_exchanges_mean,transfers_volume_from_exchanges_mean
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
