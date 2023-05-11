@@ -21,7 +21,7 @@
 import pandas as pd
 
 #Link to 'Glassnode_Metrics.xlsx' info excel file
-excel_link = '.../Glassnode_Metrics.xlsx'
+excel_link = glassnode_path + 'Glassnode_Metrics.xlsx'
 
 #create df's from sheets 'T1' & 'T2' of 'Glassnode_Metrics.xlsx' file
 glassnode_T1 = pd.read_excel(excel_link, sheet_name='T1')

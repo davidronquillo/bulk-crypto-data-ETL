@@ -86,7 +86,7 @@ for n in range(len(list(glassnode.keys()))):
     key_name = list(glassnode.keys())[n]
 
     #Obtains 'data_categories' metrics from list of 'metric_id' inputs
-    exec(open('.../glassnode_data_cat_from_sub_cat.py').read())
+    exec(open(glassnode_path + 'glassnode_data_cat_from_sub_cat.py').read())
 
     param_dict={
         'a': digital_asset,                                 #Base cryptocurrency symbol of interest
@@ -102,6 +102,6 @@ for n in range(len(list(glassnode.keys()))):
         param_dict['c'] = currency,
 
     if frequency_interval == '24h' or frequency_interval == '1h':
-        exec(open('.../Glassnode_OHLC.py').read())
+        exec(open(glassnode_path + 'Glassnode_OHLC.py').read())
     else:
-        exec(open('.../Glassnode_Close.py').read())
+        exec(open(glassnode_path + 'Glassnode_Close.py').read())

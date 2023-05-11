@@ -42,7 +42,7 @@ mempool-feerates (Pro API Key Required) \n: ')
         digital_assets = input('Enter digital assets separated by a comma (lower-case): ')
 
         #Link to 'CoinMetrics_Metrics.xlsx' info excel file
-        excel_link = '.../CoinMetrics_Metrics.xlsx'
+        excel_link = coinmetrics_path + 'CoinMetrics_Metrics.xlsx'
 
         #create df from 'TS_Metrics_Lookup' of 'CoinMetrics_Metrics.xlsx' file
         coinmetrics_TS_Metrics_Lookup_df = pd.read_excel(excel_link, sheet_name='TS_Metrics_Lookup')
@@ -452,4 +452,4 @@ exchanges \n markets \n indexes \n: ')
             'pretty': pretty                            #Human-readable formatting of JSON responses
         }
 
-exec(open('.../CoinMetrics.py').read())
+exec(open(coinmetrics_path + 'CoinMetrics.py').read())

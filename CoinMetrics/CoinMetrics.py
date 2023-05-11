@@ -56,6 +56,6 @@ if data_category == 'timeseries':
     df.set_index('time', inplace=True)
     
 
-csv_name = '.../Data/coinmetrics.csv'
+csv_name = data_path + 'coinmetrics.csv'
 
 df.to_csv(csv_name)

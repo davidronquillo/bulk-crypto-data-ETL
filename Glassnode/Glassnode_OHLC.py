@@ -21,17 +21,14 @@
 import requests
 import json
 import pandas as pd
-
-import requests
-
 # importing 'config.py' to access its variables
-import config
+# import config
 
 #Patch to avoid 'ValueError: Value is too big' message when applying 'pd.read_json'
 pd.io.json._json.loads = lambda s, *a, **kw: json.loads(s)
  
 # Obtain Glassnode API key from 'config.py' file and assign to local variable 
-GLASSNODE_TOKEN = config.GLASSNODE_KEY
+# GLASSNODE_TOKEN = config.GLASSNODE_KEY
 
 # add necessary 'api_key' parameter to 'param_dict' dictionary
 param_dict['api_key'] = GLASSNODE_TOKEN
@@ -112,6 +109,6 @@ for n in list(range(len(dictionary_columns))):
 # concatonate original 'glassnode_df' with added columns from 'append_df'
 glassnode_df = pd.concat([glassnode_df,append_df], join='outer',axis=1)
 
-csv_name = '.../Data/' + key_name + '.csv'
+csv_name = data_path + key_name + '.csv'
 
 glassnode_df.to_csv(csv_name)

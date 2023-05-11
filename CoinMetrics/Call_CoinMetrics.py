@@ -437,4 +437,4 @@ exchanges \n markets \n indexes \n: ')
             'pretty': pretty                            #Human-readable formatting of JSON responses
         }
 
-exec(open('.../CoinMetrics.py').read())
+exec(open(coinmetrics_path + 'CoinMetrics.py').read())

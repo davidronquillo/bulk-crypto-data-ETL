@@ -33,7 +33,7 @@ if data_category == 'blockchain':
                 param_dict={
                         'fsym': digital_asset,                          #Base cryptocurrency symbol of interest
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
                 digital_asset[-35:].replace('/','_') + '.csv'
 
@@ -47,7 +47,7 @@ if data_category == 'blockchain':
                 param_dict={
                         'fsym': digital_asset,                          #Base cryptocurrency symbol of interest
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
                 digital_asset[-35:].replace('/','_') + '.csv'
 
@@ -58,7 +58,7 @@ elif data_category == 'tradingsignals/intotheblock':
         param_dict={
                 'fsym': digital_asset,                          #Base cryptocurrency symbol of interest
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         digital_asset[-35:].replace('/','_') + '.csv'
 
@@ -71,7 +71,7 @@ elif data_category == 'social/coin':
                 param_dict={
                         'coinId': coin_id                       #The id of the coin you want data for
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '.csv'
 
         else:
@@ -79,7 +79,7 @@ elif data_category == 'social/coin':
                 param_dict={
                         'coinId': coin_id                       #The id of the coin you want data for
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '.csv'
 
 ## News
@@ -107,7 +107,7 @@ elif data_category == 'v2':
                 'lang': lang,                                   #Preferred language
                 'sortOrder': sortOrder,                         #Order (eg latest or popular)
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         feeds[-35:].replace('/','_') + '.csv'
 
@@ -122,7 +122,7 @@ elif data_category == 'ob/l1':
                 'tsyms': conversion_pair,                       #Comma separated cryptocurrency symbols list to convert into
                 'e': exchange,                                  #The exchange to obtain data from
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         digital_asset[-35:].replace('/','_') + '_' + conversion_pair[-35:].replace('/','_') + '.csv'
 
@@ -144,7 +144,7 @@ elif data_category == 'v2/ob/l2':
                 'e': exchange,                                  #The exchange to obtain data from
                 'limit': limit
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         digital_asset[-35:].replace('/','_') + '_' + conversion_pair[-35:].replace('/','_') + '.csv'
 
@@ -158,7 +158,7 @@ elif data_category == 'index':
                 param_dict={
                         'indexName': indexName                          #The index you want to get the latest value for.
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
                 indexName[-35:].replace('/','_') + '.csv'
 
@@ -173,10 +173,10 @@ elif data_category == 'index':
                         'quote': conversion_pair,                       #Quote cryptocurrency symbol of interest
                         'market': market                                #The Index Market
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
                 digital_asset[-35:].replace('/','_') + '_' + conversion_pair[-35:].replace('/','_') + '.csv'
 
 
 
-exec(open('.../CryptoCompare/CryptoCompare_Latest.py').read())
+exec(open(cryptocompare_path + 'CryptoCompare_Latest.py').read())

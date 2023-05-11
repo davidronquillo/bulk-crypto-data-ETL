@@ -47,7 +47,7 @@ if data_category == 'v2' or \
                 'e': exchange,                                  #The exchange to obtain data from
                 'limit': limit
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         digital_asset[-35:].replace('/','_') + '_' + conversion_pair[-35:].replace('/','_') + '.csv'
 elif data_category == 'exchange':
@@ -61,7 +61,7 @@ elif data_category == 'exchange':
                 'e': exchange,                                  #The exchange to obtain data from
                 'limit': limit
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         conversion_pair[-35:].replace('/','_') + '_' + exchange[-35:].replace('/','_') + '.csv'
         
@@ -77,7 +77,7 @@ elif data_category == 'blockchain':
                 'e': exchange,                                  #The exchange to obtain data from
                 'limit': limit
         }        
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '_' + \
         digital_asset[-35:].replace('/','_') + '_' + exchange[-35:].replace('/','_') + '.csv'
 
@@ -93,7 +93,7 @@ elif data_category == 'social/coin':
                 'coinId': coin_id,                               #The id of the coin you want data for
                 'limit': limit
         }
-        csv_name = '.../Data/' + \
+        csv_name = data_path + \
         'cc_' + data_category[-35:].replace('/','_') + '_' + sub_category[-35:].replace('/','_') + '.csv'
 
 ## Index (excluding CCCAGG)
@@ -107,7 +107,7 @@ histo/underlying/day, histo/underlying/hour, histo/underlying/minute): ')
                 param_dict={
                         'indexName': index_name                         #The index you want to get the latest value for. 
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + index_name[-35:].replace('/','_') + '.csv'
         # ***************** Special permissions required for below metrics ****************
         elif sub_category == 'histo/underlying/day' or sub_category == 'histo/underlying/hour' or \
@@ -123,8 +123,8 @@ histo/underlying/day, histo/underlying/hour, histo/underlying/minute): ')
                         'market': index_market,                         #The index market
                         'limit': limit
                 }
-                csv_name = '.../Data/' + \
+                csv_name = data_path + \
                 'cc_' + data_category[-35:].replace('/','_') + '_' + base_asset[-35:].replace('/','_') + '_' + \
                 quote_asset[-35:].replace('/','_') + '_' + index_market[-35:].replace('/','_') + '.csv'
 
-exec(open('.../CryptoCompare/CryptoCompare_Time_Series.py').read())
+exec(open(cryptocompare_path + 'CryptoCompare_Time_Series.py').read())

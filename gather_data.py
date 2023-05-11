@@ -18,29 +18,49 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# importing 'config.py' to access its variables
+import config
+
+global GLASSNODE_TOKEN, glassnode_path, CRYPTOCOMPARE_TOKEN, cryptocompare_path, coinmetrics_path, data_path
+
+# Obtain Glassnode API key from 'config.py' file and assign to local variable 
+GLASSNODE_TOKEN = config.GLASSNODE_KEY
+# Obtain Glassnode folder path from 'config.py' file and assign to local variable 
+glassnode_path = config.GLASSNODE_PATH
+
+# Obtain CryptoCompare API key from 'config.py' file and assign to local variable 
+CRYPTOCOMPARE_TOKEN = config.CRYPTOCOMPARE_KEY
+# Obtain CryptoCompare folder path from 'config.py' file and assign to local variable 
+cryptocompare_path = config.CRYPTOCOMPARE_PATH
+
+# Obtain CoinMetrics folder path from 'config.py' file and assign to local variable 
+coinmetrics_path = config.COINMETRICS_PATH
+
+data_path = config.DATA_PATH
+
 data_provider = input('Enter name of data provider (eg glassnode, coinmetrics, cryptocompare): ')
 
 if data_provider == 'glassnode':
     manual_auto_fill = input('Would you like to auto or manually enter a metric list, or a list of all metrics? (Enter "a/m/all"): ')
     if manual_auto_fill == 'm':
-        exec(open('.../Call_Glassnode.py').read())
+        exec(open(glassnode_path + 'Call_Glassnode.py').read())
     elif manual_auto_fill == 'a':
-        exec(open('.../Auto_Glassnode.py').read())
+        exec(open(glassnode_path + 'Auto_Glassnode.py').read())
     elif manual_auto_fill == 'all':
-        exec(open('.../All_Glassnode.py').read())
+        exec(open(glassnode_path + 'All_Glassnode.py').read())
 elif data_provider == 'coinmetrics':
     manual_auto_fill = input('Would you like to auto or manually enter a metric list, or a list of all metrics? (Enter "a/m/all"): ')
     if manual_auto_fill == 'm':
-        exec(open('.../Call_CoinMetrics.py').read())
+        exec(open(coinmetrics_path + 'Call_CoinMetrics.py').read())
     elif manual_auto_fill == 'a':
-        exec(open('.../Auto_CoinMetrics.py').read())
+        exec(open(coinmetrics_path + 'Auto_CoinMetrics.py').read())
     elif manual_auto_fill == 'all':
-        exec(open('.../All_CoinMetrics.py').read())
+        exec(open(coinmetrics_path + 'All_CoinMetrics.py').read())
 elif data_provider == 'cryptocompare':
     data_type = input('list, latest, timeseries: ')
     if data_type == 'list':
-        exec(open('.../Call_CryptoCompare_List.py').read())
+        exec(open(cryptocompare_path + 'Call_CryptoCompare_List.py').read())
     elif data_type == 'latest':
-        exec(open('.../Call_CryptoCompare_Latest.py').read())
+        exec(open(cryptocompare_path + 'Call_CryptoCompare_Latest.py').read())
     elif data_type == 'timeseries':
-        exec(open('.../Call_CryptoCompare_Time_Series.py').read()) 
+        exec(open(cryptocompare_path + 'Call_CryptoCompare_Time_Series.py').read()) 

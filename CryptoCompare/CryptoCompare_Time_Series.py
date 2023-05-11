@@ -25,10 +25,10 @@ import requests
 from functools import reduce
 
 # importing 'config.py' to access its variables
-import config
+# import config
 
 # Obtain CryptoCompare API key from 'config.py' file and assign to local variable 
-CRYPTOCOMPARE_TOKEN = config.CRYPTOCOMPARE_KEY
+# CRYPTOCOMPARE_TOKEN = config.CRYPTOCOMPARE_KEY
 
 # add necessary 'api_key' parameter to 'param_dict' dictionary
 param_dict['api_key'] = CRYPTOCOMPARE_TOKEN

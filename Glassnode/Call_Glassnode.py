@@ -59,7 +59,7 @@ metric_ids = input_metric_ids.split(',')
 key_name = 'glassnode'
 
 #Obtains 'data_categories' metrics from list of 'metric_id' inputs
-exec(open('.../glassnode_data_cat_from_sub_cat.py').read())
+exec(open(glassnode_path + 'glassnode_data_cat_from_sub_cat.py').read())
 
 #Input Optional currency denomination
 currency = input('Optional currency denomination (eg USD): ')
@@ -78,6 +78,6 @@ if currency:
     param_dict['c'] = currency,
 
 if frequency_interval == '24h' or frequency_interval == '1h':
-    exec(open('.../Glassnode_OHLC.py').read())
+    exec(open(glassnode_path + 'Glassnode_OHLC.py').read())
 else:
-    exec(open('.../Glassnode_Close.py').read())
+    exec(open(glassnode_path + 'Glassnode_Close.py').read())
